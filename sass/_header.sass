@@ -2,19 +2,20 @@
     font-size: 14px 
     background: #2a2a2a 
     line-height: 30px
-.doc-toper
     .welcome
         color: #bebebe
-.doc-toper
     .tel
-        color: #d8d8d8   
-.doc-toper
-    .charge,
+        color: #d8d8d8 
+    .charge
+        color: #e60012
+        @media (min-width: 1200px)
+            float: right
+        @media (min-width: 1000px)
+            padding-left: 15px
     .hotline
         color: #e60012
-.doc-toper
-    .charge
-        // float: right
+
+
 .doc-naver
     padding-top: 10px 
     padding-bottom: 10px
@@ -26,8 +27,24 @@
     font-weight: normal
 .nav a:hover
     transition: all .3s
-    // color: #0f9edf
+.margin-top
+    margin-top: 6px
 
-    
 
-
+.doc-toper
+    @media screen and (max-width: 759px)
+        display: none
+.nav-inline li a
+    @media (min-width: 760px) and (max-width:999px)
+        padding: 10px 15px
+.nav-inline li a
+    @media (min-width: 1000px)
+        padding: 14px 21px
+.nav
+    @media (min-width: 760px) and (max-width:999px)
+        margin-left: 0px
+        margin-right: -15px
+    @media (min-width: 1200px)
+        padding: 0;
+        margin-left: -21px;
+        margin-right: -21px;
