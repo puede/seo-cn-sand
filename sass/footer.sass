@@ -1,6 +1,7 @@
 @import 'color';
 
 footer
+    padding-bottom: 30px
     background-color: $grey
     .foot-list
         h3
@@ -9,3 +10,44 @@ footer
             padding:  20px 0 10px
             margin: 0 0 10px
             border-bottom: 1px solid darken($grey,10%)
+        a
+            transition: all .2s
+        @media (min-width:240px)
+            float: left
+        @media (min-width:240px) and (max-width:319px)
+            width: 50%
+        @media (min-width:320px) and (max-width:599px)
+            width: 33%
+        @media (min-width:600px) and (max-width:760px)
+            width: 20%
+
+    .share
+        h3
+            padding:  20px 0 10px
+            margin: 0 0 10px
+            border-bottom: 1px solid $blue
+        img,.share-i
+            float: left
+        .share-i
+            padding-left: 14px
+        .jiathis
+            padding-top: 10px
+            .icon
+                font-size: 24px
+                color: #fff
+                line-height: 45px
+            a
+                display: block
+                width: 45px
+                height: 45px
+                border-radius: 50%
+                background-color: darken($grey,20%)
+                cursor: pointer
+                margin-right: 9px
+                float: left
+                text-align: center
+                transition: all .2s
+                &:hover
+                    background-color: #fff
+                    .icon
+                        color: $blue
