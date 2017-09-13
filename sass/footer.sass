@@ -1,5 +1,6 @@
 @import 'color';
-
+body
+    font-size: 16px
 footer
     padding-bottom: 30px
     background-color: $grey
@@ -12,9 +13,11 @@ footer
             border-bottom: 1px solid darken($grey,10%)
             @media (min-width:240px)
                 padding:  27px 0 24px
+                margin: 0 0 13px
         a
             transition: all .2s
             line-height: 28px
+            font-size: 0.875em
         @media (min-width:240px)
             float: left
             width: 50%          
@@ -27,17 +30,23 @@ footer
             padding: 0 10px
         @media (min-width:1000px)
             width: 14%
+            max-width: 154px
     .foot-line
         @media (min-width:760px) and (max-width:1000px)
             margin: 0 -10px
 
     .share
+        p
+            font-size: 0.875em
         h3
             padding:  20px 0 10px
             margin: 0 0 10px
             border-bottom: 1px solid $blue
             @media (min-width:760px)
                 padding:  18px 0 8px
+            @media (min-width:1000px)
+                padding: 27px 0 18px
+                margin: 0 0 20px
         img,.share-i
             float: left
         .share-i
