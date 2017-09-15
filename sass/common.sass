@@ -2,6 +2,7 @@
 @import '_header';
 @import '_footer';
 
+// 每部分通用的h3
 .ltitle
     padding: 15px 0 10px
     @media (min-width:760px)
@@ -22,3 +23,32 @@
         font-size: 14px
         line-height: 1
         font-weight: normal
+
+// 查看更多
+.read-more
+    float: right
+    color: $blue
+    line-height: 30px
+
+// 图片上的more图标
+.stick-figure
+    a
+        display: block
+        position: relative
+    span
+        content: ""
+        position: absolute
+        bottom: 0
+        right: 0
+        font-size: 9px
+        color: #fff
+        width: 0
+        height: 0
+        border-bottom: 41px solid $blue
+        border-left: 41px solid transparent
+        &::after
+            display: block
+            content: "More"
+            position: relative
+            right: 32px
+            top: 26px

@@ -1,10 +1,17 @@
 @import '_color'
+
+// banner轮播图
 .banner_index 
     img
         width: 100%
+    
+// 产品中心
 .product
     padding-top: 2px
     padding-bottom: 33px
+    .banner 
+        .pointer
+            display: none
 .product_img
     img
         width: 100%
@@ -13,32 +20,145 @@
         padding-top: 14px
         padding-bottom: 6px
         font-weight: normal
-        position: relative
+    
 
-.product_img
-    @media(max-width:999px)
+// 投资指导
+.invest
+    background-color: $grey
+    padding-bottom: 50px
+    .invest-suggest
+        h3
+            padding-top: 10px
+            padding-bottom: 20px
+            font-size: 16px
+            font-weight: normal
         p
-            display: none
-.product_img
-    @media(min-width:1000px)
+            font-size: 14px
+            line-height: 28px
+        .date
+            font-size: 16px
+            padding-top: 14px
+            padding-bottom: 14px
+        @media(min-width:1000px)  
+            .invest-content:nth-child(1),.invest-content:nth-child(2),.invest-content:nth-child(3)
+                border-right: 1px solid #bfbfbf
+        @media(max-width:999px)  
+            .invest-content
+                border-bottom: 1px solid #bfbfbf
+    .invest-suggest
+        .active
+            h3,.date
+                color: $blue   
+            
+// 制砂工艺和案例现场
+.sand-case
+    padding-bottom: 50px
+    p
+        font-size: 14px
+    
+    // 制砂工艺
+    .sand-production
         p
-            position: absolute
-            right: 15px
-            font-size: 9px
             color: #fff
-            bottom: -5px       
-        h4::after
-            content: ""
-            position: absolute
-            top: 0
-            right: 0
-            font-size: 9px
-            color: red
-            width: 0
-            height: 0
-            border-bottom: 41px solid $blue
-            border-left: 41px solid transparent
-.product
-    .banner
-        .pointer
-            display: none
+            background-color: $blue    
+            line-height: 30px
+            padding: 20px
+            text-indent: 2em
+            
+        img
+            padding: 15px 22px 28px
+            border: 1px solid $blue
+            @media(max-width:1199px) and (min-width:1000px)
+                width: 100%
+            @media(max-width:999px) and (min-width:760px)
+                margin: 0 auto
+                display: block
+                padding: 15px 102px 25px
+            @media(max-width:759px)
+                width: 100%
+    // 案例现场    
+    .case-scene
+        p
+            line-height: 30px
+        .case-center
+            padding-top: 20px
+            h3
+                font-size: 16px
+                font-weight: normal
+                padding-top: 10px
+                padding-bottom: 12px
+            img
+                @media(max-width:499px)
+                    width: 100%
+
+                @media(min-width:500px)
+                    float: left
+            span
+                @media(max-width:499px)
+                    display: none
+            div
+                background-color: $grey
+                @media(min-width:1200px)
+                    padding-top: 10px
+                    padding-left: 20px
+                    padding-bottom: 30px
+                    padding-right: 30px
+                    width: 300px
+                    height: 180px
+                    float: left
+                @media(max-width:1199px) and (min-width:1000px)
+                    padding-left: 290px
+                    padding-bottom: 17px
+                @media(max-width:999px) and (min-width:760px)
+                    padding-left: 300px
+                    padding-top: 16px
+                    padding-bottom: 30px
+                @media(max-width:759px) and (min-width:500px)
+                    height: 180px
+                    padding-left: 282px
+                    padding-bottom: 17px
+            // 案例现场 more的通用
+            a
+                display: block
+                position: relative
+            span
+                content: ""
+                position: absolute
+                top: 139px
+                right: 0
+                font-size: 9px
+                color: #fff
+                width: 0
+                height: 0
+                border-bottom: 41px solid $blue
+                border-left: 41px solid transparent
+                &::after
+                    display: block
+                    content: "More"
+                    position: relative
+                    right: 32px
+                    top: 26px        
+            @media(max-width:1199px) and (min-width:1000px)
+                padding-top: 30px
+                
+                a
+                    display: block
+                    position: relative
+                span
+                    content: ""
+                    position: absolute
+                    top: 139px
+                    right: 0
+                    font-size: 9px
+                    color: #fff
+                    width: 0
+                    height: 0
+                    border-bottom: 41px solid $blue
+                    border-left: 41px solid transparent
+                    &::after
+                        display: block
+                        content: "More"
+                        position: relative
+                        right: 32px
+                        top: 26px
+
