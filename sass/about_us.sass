@@ -1,5 +1,12 @@
 @import '_color'
 
+// banner
+    .banner_index
+        .res
+            @media(max-width:759px)
+                max-width: 100%
+  
+                
 // 企业简介
 .company-profile
     padding-top: 25px
@@ -59,3 +66,57 @@
             @media(min-width:1000px)
                 width: 100%   
 // 文化黎明
+.company-culture
+    background: url(../img/about_us/culture.jpg)
+    @media(min-width:760px)
+        height: 347px
+        padding-top: 26px
+    @media(max-width:759px)
+        height: 347px
+        padding-top: 26px
+    img
+        @media(max-width:759px)
+            width: 25%
+            float: left
+            padding: 5px
+        @media(max-width:999px) and (min-width:760px)
+            width: 50%
+            float: left
+            padding-top: 15px
+            padding-bottom: 5px
+            padding-right: 5px
+        @media(min-width:1000px)
+            padding-top: 6px
+            padding-bottom: 6px
+            padding-right: 6px
+    .culture-img
+        img:nth-child(3)
+            @media(min-width:1200px)
+                padding-left: 140px
+            @media(max-width:1199px) and (min-width:1000px)
+                padding-left: 70px
+    .culture-lm
+        @media(max-width:999px) and (min-width:760px)
+            padding-left: 30px
+    
+    h2  
+        padding-top: 35px
+        padding-bottom: 10px
+        font-size: 24px
+        color: #ffffff
+        line-height: 40px
+        @media(max-width:759px)
+            padding-top: 20px
+        @media(max-width:999px) and (min-width:760px)
+            padding-top: 15px
+        
+        
+    p
+        font-size: 14px
+        color: #ffffff
+        line-height: 40px
+        text-indent: 2em
+        @media(max-width:759px)
+            line-height: 30px
+    
+   
