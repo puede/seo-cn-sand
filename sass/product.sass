@@ -17,7 +17,11 @@
         padding-bottom: 10px
         font-weight: normal
         color: $blue
-       
+ 
+// 产品中心
+.product
+    padding-bottom: 25px
+    
 // 产品中心 图片
 .product-b
     .stick-figure
@@ -36,12 +40,13 @@
             border-left: 1px solid #d2d2d2
             border-right: 1px solid #d2d2d2    
             margin-bottom: -1px
-            
     h3
         font-size: 16px
         padding-top: 18px
         padding-bottom: 10px
         font-weight: normal
+        @media(max-width:500px) and (min-width:450px)
+            height: 60px
     p
         font-size: 14px
         padding-top: 2px
@@ -54,3 +59,30 @@
             border-left: 1px solid $blue
             border-right: 1px solid $blue    
             margin-bottom: -1px
+
+// border蓝线
+.product-border
+    border: 5px solid $blue
+
+// 产品列表
+.product-list
+    padding-top: 10px
+    padding-bottom: 70px
+    .line-big
+        div 
+            ul 
+                padding-left: 0
+                padding-right: 0
+    ul li
+        padding-top: 12px
+        padding-bottom: 8px
+        padding-right: 5px
+        span
+            color: $blue
+    a
+        font-size: 14px
+        padding-left: 5px
+    h3
+        font-size: 18px
+        padding-top: 25px
+        padding-bottom: 15px
