@@ -1,0 +1,56 @@
+@import '_color'
+
+// 首页-产品中心
+.index-product
+    padding-top: 10px
+    padding-bottom: 8px
+    a
+        font-size: 14px
+
+// 标题 产品中心
+.product-a
+    img
+        float: left
+        padding: 5px 10px 5px 5px
+    h2
+        font-size: 24px
+        padding-bottom: 10px
+        font-weight: normal
+        color: $blue
+       
+// 产品中心 图片
+.product-b
+    .stick-figure
+        span
+            @media(max-width:999px) and (min-width:760px)
+                bottom: 0
+    img
+        @media(max-width:1199px)
+            width: 100%
+    .xm3
+        padding-top: 15px
+        padding-bottom: 15px
+        div 
+            padding-left: 10px
+            border-bottom: 1px solid #d2d2d2
+            border-left: 1px solid #d2d2d2
+            border-right: 1px solid #d2d2d2    
+            margin-bottom: -1px
+            
+    h3
+        font-size: 16px
+        padding-top: 18px
+        padding-bottom: 10px
+        font-weight: normal
+    p
+        font-size: 14px
+        padding-top: 2px
+        padding-bottom: 24px
+    .active
+        h3
+            color: $blue
+        div
+            border-bottom: 1px solid $blue
+            border-left: 1px solid $blue
+            border-right: 1px solid $blue    
+            margin-bottom: -1px

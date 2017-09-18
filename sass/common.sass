@@ -36,11 +36,13 @@
         display: block
         position: relative
     span
+        @media(max-width:999px) and (min-width:760px)
+            bottom: 41px
         content: ""
         position: absolute
         bottom: 0
         right: 0
-        font-size: 0.5625em
+        font-size: 12px
         color: #fff
         width: 0
         height: 0
@@ -50,5 +52,13 @@
             display: block
             content: "More"
             position: relative
-            right: 29px
+            right: 32px
             top: 27px
+
+//banner部分
+
+.banner-index
+    img
+        margin: 0 auto
+        @media(max-width:759px)
+            width: 100%
