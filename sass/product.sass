@@ -31,8 +31,8 @@
     img
         @media(max-width:1199px)
             width: 100%
-    .xm3
-        padding-top: 15px
+    .stick-figure
+        padding-top: 18px
         padding-bottom: 15px
         div 
             padding-left: 10px
@@ -103,8 +103,8 @@
         float: left
     .pro-a-r
         @media(max-width:999px)
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 15px
+            padding-right: 15px
         padding-left: 28px
         padding-right: 28px
         background-color: $grey
@@ -113,8 +113,8 @@
         h3
             font-size: 20px
             @media(max-width:1199px) and (min-width:1000px)
-                padding-top: 15px;
-                padding-bottom: 15px;
+                padding-top: 15px
+                padding-bottom: 15px
             padding-top: 30px
             padding-bottom: 20px
         p
@@ -148,9 +148,173 @@
                     @media(max-width:999px) and (min-width:760px)    
                         padding: 5px 138px
                     @media(max-width:399px) and (min-width:300px)
-                        padding: 5px 23px
+                        padding: 5px 21px
                     @media(max-width:759px) and (min-width:400px)
                         padding: 5px 40px
                     
+// 相关设备
+.product-relative
+    padding-top: 40px
+    padding-bottom: 30px
+    h2
+        font-size: 18px
+        padding-bottom: 15px
+    .stick-figure
+        span
+            @media(max-width:999px) and (min-width:760px)
+                bottom: 0
+        @media(min-width:1000px)
+            padding-left: 0
+            padding-right: 0
+        padding-top: 15px
+        padding-bottom: 15px
+        img
+            width: 100%
+        a div
+            padding-left: 10px
+            border-bottom: 1px solid #d2d2d2
+            border-left: 1px solid #d2d2d2
+            border-right: 1px solid #d2d2d2    
+            margin-bottom: -1px
 
-        
+        h3
+            font-size: 16px
+            padding-top: 18px
+            padding-bottom: 10px
+            font-weight: normal
+            @media(max-width:500px) and (min-width:450px)
+                height: 60px
+        p
+            font-size: 14px
+            padding-top: 2px
+            padding-bottom: 24px
+
+// 相关设备特点
+.product-feature
+    h4
+        font-size: 18px
+        color: $blue
+        padding-left: 20px
+    .feature
+        @media(max-width:759px) and (min-width:300px)
+            width: 33.333333%
+            float: left
+
+    span
+        font-size: 30px
+        color: $blue
+        float: none
+        border-left: 10px solid
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        position: absolute
+        left: 10px
+        top: 5px
+    .active
+        span
+            float: none
+            border-top: 10px solid
+            border-right: 10px solid transparent
+            border-left: 10px solid transparent
+            margin-top: 0
+            position: absolute
+            left: 10px
+            top: 10px
+.performance-content
+    h4
+        font-size: 18px
+        padding-top: 30px
+        font-weight: normal
+    p
+        font-size: 14px
+        line-height: 24px
+        span
+            line-height: 44px
+            color: $blue
+    .line .xs6
+        padding-left: 0
+        padding-right: 0
+.feature-content
+    h4
+        font-size: 18px
+        padding-top: 30px
+        padding-bottom: 18px
+        font-weight: normal
+    p
+        padding-top: 20px
+        padding-bottom: 10px
+    img
+        width: 100%
+        margin: 0 auto
+        display: block
+.case-relative
+    img
+        @media(max-width:759px) and (min-width:300px)
+            width: 100%
+    h4
+        font-size: 18px
+        padding-top: 30px
+        padding-bottom: 18px
+        font-weight: normal
+    h5
+        font-size: 18px
+        padding-top: 10px
+        padding-bottom: 10px
+        border-bottom: 1px solid $blue
+    h6
+        font-size: 16px
+        padding-top: 20px
+        padding-bottom: 10px
+        color: $blue
+        @media(max-width:759px) and (min-width:300px)
+            padding-top: 10px
+    p
+        font-size: 14px
+        line-height: 26px
+    a
+        font-size: 14px
+        padding: 8px 50px
+        border-radius: 90px / 90px
+        width: 170px
+        height: 34px
+        text-align: center
+        color: #fff
+        background-color: $blue
+        margin-top: 20px
+        position: absolute
+        @media(max-width:759px) and (min-width:300px)
+            height: 30px
+            margin-top: 0
+            padding: 6px 50px 
+           
+.online-message
+    h4
+        font-size: 24px
+        color: $blue
+        padding-top: 65px
+        padding-bottom: 26px
+        font-weight: 700
+    input 
+        height: 40px
+    .form-group
+        padding-bottom: 20px
+    .input
+        line-height: 30px
+    
+    .submit-message
+        padding-top: 20px
+        padding-bottom: 100px
+        @media(max-width:999px)
+            padding-bottom: 50px
+        button
+            font-size: 16px
+            float: right
+            background-color: $blue
+            color: #fff
+            padding: 10px 57px
+    .colorred
+        color: red
+        top: 10px
+        position: absolute
+        right: -8px
+

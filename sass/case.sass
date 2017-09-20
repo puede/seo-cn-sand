@@ -1,0 +1,276 @@
+@import '_color'
+
+// 首页-案例中心
+.index-case
+    padding-top: 10px
+    padding-bottom: 8px
+    a
+        font-size: 14px
+
+// 案例中心标题
+.case-center
+    .ltitle
+        padding-top: 0   
+    .case-feature
+        h4
+            padding-top: 0    
+    
+    h4
+        font-size: 24px
+        padding-left: 10px
+.case-feature
+    @media(min-width:1000px)
+        padding-left: 10px
+    @media(max-width:449px)
+        padding-bottom: 0
+    h4
+        padding-top: 30px
+        padding-bottom: 20px
+        font-weight: normal
+        font-size: 18px
+        padding-left: 16px
+        @media(max-width:449px)
+            font-size: 14px
+            padding-bottom: 10px
+    .feature
+        @media(max-width:759px) and (min-width:300px)
+            width: 33.333333%
+            float: left
+
+    span
+        font-size: 30px
+        color: $blue
+        float: none
+        border-left: 10px solid
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        position: absolute
+        left: 10px
+        top: 0px
+    .active
+        span
+            float: none
+            border-top: 10px solid
+            border-right: 10px solid transparent
+            border-left: 10px solid transparent
+            margin-top: 0
+            position: absolute
+            left: 0px
+            top: 5px
+        h4
+            color: $blue
+
+// 案例中心 图片
+.case-image 
+    .xm6
+        padding-left: 0
+        padding-right: 0
+        padding-top: 25px
+        padding-bottom: 25px
+    img
+        width: 100%
+    // .case-ig-n
+    .case-ig-n:nth-child(1),
+    .case-ig-n:nth-child(2),
+    .case-ig-n:nth-child(3),
+    .case-ig-n:nth-child(4),
+    .case-ig-n:nth-child(5),
+    .case-ig-n:nth-child(6)
+        border-bottom: 1px dotted #c9c9c9
+    
+        
+    .active
+        .case-relative-r
+            h5
+                color: $blue
+    .case-relative-r
+        h5
+            font-size: 16px
+            padding-top: 8px
+            padding-bottom: 14px
+            @media(max-width:1199px) and (min-width:1000px)
+                padding-top: 0
+                padding-bottom: 10px
+        p
+            font-size: 14px
+            line-height: 30px
+            @media(max-width:999px) and (min-width:760px)
+                line-height: 40px
+        .detail
+            font-size: 14px
+            padding: 6px 35px
+            border-radius: 90px / 90px
+            width: 130px
+            height: 32px
+            text-align: center
+            color: #fff
+            background-color: #26a6e0
+            margin-top: 12px
+            position: absolute
+            @media(max-width:1199px) and (min-width:1000px)
+                margin-top: 0
+            @media(max-width:999px) and (min-width:760px)
+                margin-top: 25px
+            @media(max-width:759px)
+                margin-top: 0
+                padding: 5px 35px
+                width: 127px
+                height: 24px
+
+// 查看更多
+.view-more
+    text-align: center  
+    padding-bottom: 50px
+    padding-top: 10px
+    position: relative
+    a
+        font-size: 14px
+        color: $blue
+    .view-more-l
+        bottom: 56px
+        position: absolute
+        height: 1px
+        width: 76px
+        background-color: $blue
+        left: 489px
+        @media(max-width:1199px) and (min-width:1000px)
+            left: 530px
+        @media(max-width:999px) and (min-width:760px)
+            left: 410px
+        @media(max-width:759px) and (min-width:601px)
+            left: 200px
+        @media(max-width:600px) and (min-width:450px)
+            left: 150px
+        @media(max-width:449px)
+            left: 70px
+        
+    .view-more-r
+        bottom: 56px
+        position: absolute
+        height: 1px
+        width: 76px
+        background-color: $blue
+        right: 489px
+        @media(max-width:1199px) and (min-width:1000px)
+            right: 530px
+        @media(max-width:999px) and (min-width:760px)
+            right: 410px
+        @media(max-width:759px) and (min-width:601px)
+            right: 200px
+        @media(max-width:600px) and (min-width:450px)
+            right: 150px
+        @media(max-width:449px)
+            right: 70px
+
+// 案例中心内页
+.case-center
+    padding-top: 10px
+// 左侧
+.case-center-l
+    padding-bottom: 40px
+    @media(max-width:999px)
+        padding-bottom: 10px
+    .case-border
+        border-bottom: 3px solid $blue
+    .xm3
+        .ltitle
+            padding-top: 0       
+    .case-feature
+        h4
+            padding-top: 0
+        
+    .product-detail
+        h2
+            font-size: 20px
+            font-weight: normal
+            padding-top: 30px
+            padding-bottom: 22px
+
+        p
+            line-height: 30px
+            font-size: 14px
+        span
+            color: $blue
+        img
+            margin: 0 auto
+            display: block
+            padding-top: 20px
+            padding-bottom: 8px
+            max-width: 100%
+        h3
+            font-size: 18px
+            color: $blue
+            padding-top: 20px
+            padding-bottom: 10px
+            font-weight: normal
+
+// 右侧
+.case-center-r
+    .article-content
+        padding: 0 0 20px
+        text-align: center
+        @media(max-width:999px)
+            padding-left: 10px
+            padding-right: 10px
+            padding-top: 10px
+        
+        .wenzhang
+            background-color: $grey   
+            padding-top: 0
+            padding-bottom: 0  
+            
+        p
+            font-size: 14px
+            color: $blue
+            padding-top: 5px
+            padding-bottom: 5px
+        h2  
+            font-size: 14px
+            font-weight: normal
+            padding-bottom: 15px
+    // 热销设备
+    .hot-sale-products
+        padding-left: 0
+        padding-right: 0
+        
+        
+        @media(min-width:1000px)
+            .xm12
+                padding-left: 0
+                padding-right: 0
+        h2
+            font-size: 18px
+            color: $blue
+            font-weight: normal
+            padding-bottom: 20px
+        .stick-figure
+            span
+                @media(max-width:999px) and (min-width:760px)
+                    bottom: 0
+            @media(min-width:1000px)
+                padding-left: 0
+                padding-right: 0
+            padding-bottom: 30px
+            img
+                width: 100%
+            a div
+                padding-left: 10px
+                border-bottom: 1px solid #d2d2d2
+                border-left: 1px solid #d2d2d2
+                border-right: 1px solid #d2d2d2    
+                margin-bottom: -1px
+
+            h3
+                font-size: 16px
+                padding-top: 18px
+                padding-bottom: 10px
+                font-weight: normal
+                @media(max-width:500px) and (min-width:450px)
+                    height: 60px
+            p
+                font-size: 14px
+                padding-top: 2px
+                padding-bottom: 24px
+    
+
+        
