@@ -1,0 +1,201 @@
+@import '_color'
+
+// 
+// 首页-案例中心
+.index-case
+    padding-top: 10px
+    padding-bottom: 8px
+    a
+        font-size: 14px
+// 案例中心标题
+.case-center
+    .ltitle
+        padding-top: 0   
+    .case-feature
+        h4
+            padding-top: 0    
+
+    h4
+        font-size: 16px
+        padding-left: 10px
+        padding-top: 5px
+.case-feature
+    @media(min-width:1000px)
+        padding-left: 10px
+    @media(max-width:449px)
+        padding-bottom: 0
+    h4
+        padding-top: 30px
+        padding-bottom: 20px
+        font-weight: normal
+        font-size: 18px
+        padding-left: 16px
+        @media(max-width:449px)
+            font-size: 14px
+            padding-bottom: 10px
+    .feature
+        @media(max-width:759px) and (min-width:300px)
+            width: 33.333333%
+            float: left
+
+    span
+        font-size: 30px
+        color: $blue
+        float: none
+        border-left: 10px solid
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        position: absolute
+        left: 10px
+        top: 0px
+    .active
+        span
+            float: none
+            border-top: 10px solid
+            border-right: 10px solid transparent
+            border-left: 10px solid transparent
+            margin-top: 0
+            position: absolute
+            left: 0px
+            top: 5px
+        h4
+            color: $blue
+// 投资指导,图片河卵石
+.guide-case
+    img
+        max-width: 100%
+    .guide-b
+        .guide-a
+            padding-top: 15px
+            padding-bottom: 30px
+            @media(max-width:1199px) and (min-width:1000px)
+                padding-top: 0
+                padding-bottom: 0
+                border-bottom: 1px dotted $blue
+            @media(max-width:999px)
+                padding-bottom: 10px
+                border-bottom: 1px dotted $blue
+
+        h3
+            
+            font-size: 16px
+            font-weight: normal
+            padding-bottom: 10px
+            padding-top: 10px
+        p
+            font-size: 14px
+            line-height: 30px
+            @media(max-width:1199px) and (min-width:1000px)
+                line-height: 24px
+        .date
+            color: $blue
+        .active
+            h3
+                color: $blue
+// 指导
+.guide-article
+    padding-top: 10px
+    // padding-bottom: 20px
+    .guide-article-a
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 15px
+        padding-right: 5px
+        
+    @media(min-width:1000px)    
+        .guide-article-a:nth-child(1),
+        .guide-article-a:nth-child(2),
+        .guide-article-a:nth-child(3),
+        .guide-article-a:nth-child(4)
+            border-bottom: 1px solid #e5e5e5
+    @media(max-width:999px) and (min-width:450px)   
+            .guide-article-a:nth-child(1),
+            .guide-article-a:nth-child(2),
+            .guide-article-a:nth-child(3),
+            .guide-article-a:nth-child(4),
+            .guide-article-a:nth-child(5),
+            .guide-article-a:nth-child(6)
+                border-bottom: 1px solid #e5e5e5
+    @media(max-width:449px)
+        .guide-article-a:nth-child(1),
+        .guide-article-a:nth-child(2),
+        .guide-article-a:nth-child(3),
+        .guide-article-a:nth-child(4),
+        .guide-article-a:nth-child(5),
+        .guide-article-a:nth-child(6),
+        .guide-article-a:nth-child(7)
+            border-bottom: 1px solid #e5e5e5
+        
+    .active
+        h3
+            color: $blue
+    h3
+        font-size: 16px
+        font-weight: normal
+        padding-top: 3px
+        padding-bottom: 18px
+        overflow: hidden 
+        text-overflow: ellipsis
+        height: 42px
+    p
+        font-size: 16px
+        line-height: 28px
+        overflow: hidden 
+        text-overflow: ellipsis
+        display: -webkit-box 
+        -webkit-box-orient: vertical
+        -webkit-line-clamp: 3 
+        @media(min-width:450px) 
+            height: 84px
+    .date-a
+        color: $blue
+        padding-top: 8px
+        padding-bottom: 30px
+        @media(max-width:449px) 
+            padding-bottom: 0
+
+//
+// 查看更多
+.view-more
+    text-align: center  
+    padding-bottom: 50px
+    padding-top: 10px
+    position: relative
+    a
+        font-size: 14px
+        color: $blue
+    .view-more-l
+        bottom: 56px
+        position: absolute
+        height: 1px
+        width: 76px
+        background-color: $blue
+        left: 489px
+        @media(max-width:1199px) and (min-width:1000px)
+            left: 530px
+        @media(max-width:999px) and (min-width:760px)
+            left: 410px
+        @media(max-width:759px) and (min-width:601px)
+            left: 200px
+        @media(max-width:600px) and (min-width:450px)
+            left: 150px
+        @media(max-width:449px)
+            left: 70px
+        
+    .view-more-r
+        bottom: 56px
+        position: absolute
+        height: 1px
+        width: 76px
+        background-color: $blue
+        right: 489px
+        @media(max-width:1199px) and (min-width:1000px)
+            right: 530px
+        @media(max-width:999px) and (min-width:760px)
+            right: 410px
+        @media(max-width:759px) and (min-width:601px)
+            right: 200px
+        @media(max-width:600px) and (min-width:450px)
+            right: 150px
+        @media(max-width:449px)
+            right: 70px
