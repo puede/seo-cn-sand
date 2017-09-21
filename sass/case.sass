@@ -68,16 +68,16 @@
         padding-top: 25px
         padding-bottom: 25px
     img
-        width: 100%
-    // .case-ig-n
-    .case-ig-n:nth-child(1),
-    .case-ig-n:nth-child(2),
-    .case-ig-n:nth-child(3),
-    .case-ig-n:nth-child(4),
-    .case-ig-n:nth-child(5),
-    .case-ig-n:nth-child(6)
-        border-bottom: 1px dotted #c9c9c9
-    
+        max-width: 100%
+    .case-ig-n
+        border-top: 1px dotted #c9c9c9
+    @media(min-width:1000px)
+        .case-ig-n:nth-child(1),
+        .case-ig-n:nth-child(2)
+            border-top: 1px dotted #fff
+    @media(max-width:999px)
+        .case-ig-n:nth-child(1)
+            border-top: 1px dotted #fff
         
     .active
         .case-relative-r
@@ -95,7 +95,7 @@
             font-size: 14px
             line-height: 30px
             @media(max-width:999px) and (min-width:760px)
-                line-height: 40px
+                line-height: 30px
         .detail
             font-size: 14px
             padding: 6px 35px
@@ -110,7 +110,7 @@
             @media(max-width:1199px) and (min-width:1000px)
                 margin-top: 0
             @media(max-width:999px) and (min-width:760px)
-                margin-top: 25px
+                margin-top: 0
             @media(max-width:759px)
                 margin-top: 0
                 padding: 5px 35px

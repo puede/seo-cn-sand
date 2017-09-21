@@ -101,34 +101,29 @@
         padding-bottom: 15px
         padding-left: 15px
         padding-right: 5px
-        
+        border-top: 1px solid #e5e5e5
+        &:hover
+            h3
+                color: $blue
+                transition: all .3s
+            p
+                color: $blue
+                transition: all .3s
     @media(min-width:1000px)    
         .guide-article-a:nth-child(1),
         .guide-article-a:nth-child(2),
         .guide-article-a:nth-child(3),
         .guide-article-a:nth-child(4)
-            border-bottom: 1px solid #e5e5e5
+            border-top: 1px solid #fff
     @media(max-width:999px) and (min-width:450px)   
             .guide-article-a:nth-child(1),
-            .guide-article-a:nth-child(2),
-            .guide-article-a:nth-child(3),
-            .guide-article-a:nth-child(4),
-            .guide-article-a:nth-child(5),
-            .guide-article-a:nth-child(6)
-                border-bottom: 1px solid #e5e5e5
+            .guide-article-a:nth-child(2)
+                border-top: 1px solid #fff
     @media(max-width:449px)
-        .guide-article-a:nth-child(1),
-        .guide-article-a:nth-child(2),
-        .guide-article-a:nth-child(3),
-        .guide-article-a:nth-child(4),
-        .guide-article-a:nth-child(5),
-        .guide-article-a:nth-child(6),
-        .guide-article-a:nth-child(7)
-            border-bottom: 1px solid #e5e5e5
+        .guide-article-a:nth-child(1)
+            border-top: 1px solid #fff
         
-    .active
-        h3
-            color: $blue
+        
     h3
         font-size: 16px
         font-weight: normal
@@ -136,7 +131,7 @@
         padding-bottom: 18px
         overflow: hidden 
         text-overflow: ellipsis
-        height: 42px
+        white-space: nowrap
     p
         font-size: 16px
         line-height: 28px
@@ -145,8 +140,7 @@
         display: -webkit-box 
         -webkit-box-orient: vertical
         -webkit-line-clamp: 3 
-        @media(min-width:450px) 
-            height: 84px
+        
     .date-a
         color: $blue
         padding-top: 8px

@@ -99,14 +99,16 @@
                 <p>以服务为核心全方位服务于客户</p>
                 <p>以质量为中心为客户打造值得信赖的产品</p>
             </div>
-            <div class="xl12 xm9 message-r">
+            <div class="xl12 xm9 message-r" id="comment">
                 <h4>在线留言</h4>
-                <form action="" method="">
+                <script src="/js/msg-utf8.js" charset="utf-8"></script>
+                <form action="http://data.lmzg.com/post.php" method="post">
+                    <input type="hidden" name="url" id="url" value="http://122.152.193.160:8081/hpt/">
                     <div class="line-big">
                             <div class="xl12 xs6">
                                 <div class="form-group">
                                     <div class="field">
-                                        <input type="text" class="input" name="yourname" placeholder="您的姓名" required="required"/>
+                                        <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" required="required"  />
                                         <span class="colorred">*</span>
                                     </div>
                                 </div>
@@ -114,7 +116,7 @@
                             <div class="xl12 xs6">
                                 <div class="form-group">
                                     <div class="field">
-                                        <input type="text" class="input" name="phone" placeholder="联系方式" />
+                                        <input name="tel" id="tel" type="text" class="input"  placeholder="联系方式" />
                                         <span class="colorred">*</span>
                                     </div>
                                 </div>
@@ -124,14 +126,14 @@
                             <div class="xl12 xs6">
                                 <div class="form-group">
                                     <div class="field">
-                                        <input type="text" class="input" name="meail" placeholder="您的邮箱" />
+                                        <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" />
                                     </div>
                                 </div>
                             </div>
                             <div class="xl12 xs6">
                                 <div class="form-group">
                                     <div class="field">
-                                        <input type="text" class="input" name="area" placeholder="所在地区" />
+                                        <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" />
                                         <span class="colorred">*</span>
                                     </div>
                                 </div>
@@ -139,7 +141,7 @@
                         </div>
                         <div class="form-group">
                             <div class="field">
-                                <textarea class="input" name="message" placeholder="您的留言"></textarea>
+                                <textarea class="input" name="message" id="msg" placeholder="您的留言" class="require"></textarea>
                             </div>
                         </div>
                         <div class="form-group submit-message">
@@ -197,7 +199,7 @@
                     <h3>联系我们</h3>
                     <ul class="list-unstyle">
                         <li><a href="">联系方式</a></li>
-                        <li><a href="">在线留言</a></li>
+                        <li><a href="./contact.html#comment">在线留言</a></li>
                     </ul>
                 </div>
             </div>
