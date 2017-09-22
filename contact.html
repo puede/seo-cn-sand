@@ -102,54 +102,77 @@
             <div class="xl12 xm9 message-r" id="comment">
                 <h4>在线留言</h4>
                 <script src="/js/msg-utf8.js" charset="utf-8"></script>
-                <form action="http://data.lmzg.com/post.php" method="post">
+                <script>
+                    //校验邮箱
+                    function checkEmail(obj){
+                        var yx=obj.value;
+                        var reg="^\\w+@\\w+(\\.\\w{2,3})*\\.\\w{2,3}$";
+                        var t=yx.match(reg);
+                        if (t==null){
+                            alert("邮箱输入有误，请重填！");
+                        }return false;
+                    }
+
+                    // 手机号验证
+                    function checkTel(){
+                        var tel = document.getElementById('tel').value;
+                        if(!/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(tel)){
+                            alert('手机号码有误，请重填');
+                            return false;
+                        }
+                    }
+                </script>
+                <form action="http://data.lmzg.com/post.php" method="post" id="submitForm">
                     <input type="hidden" name="url" id="url" value="http://122.152.193.160:8081/hpt/">
                     <div class="line-big">
-                            <div class="xl12 xs6">
-                                <div class="form-group">
-                                    <div class="field">
-                                        <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" required="required"  />
-                                        <span class="colorred">*</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="xl12 xs6">
-                                <div class="form-group">
-                                    <div class="field">
-                                        <input name="tel" id="tel" type="text" class="input"  placeholder="联系方式" />
-                                        <span class="colorred">*</span>
-                                    </div>
+                        <div class="xl12 xs6">
+                            <div class="form-group">
+                                <div class="field">
+                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" 
+                                    onblur="checkName(this)" required="required"
+                                    />
+                                    <span class="colorred">*</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="line-big">
-                            <div class="xl12 xs6">
-                                <div class="form-group">
-                                    <div class="field">
-                                        <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="xl12 xs6">
-                                <div class="form-group">
-                                    <div class="field">
-                                        <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" />
-                                        <span class="colorred">*</span>
-                                    </div>
+                        <div class="xl12 xs6">
+                            <div class="form-group">
+                                <div class="field">
+                                    <input name="tel" id="tel" type="text" class="input" placeholder="联系方式" required="required" minlength="2" 
+                                    onblur="checkTel(this)"/>
+                                    <span class="colorred">*</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="field">
-                                <textarea class="input" name="message" id="msg" placeholder="您的留言" class="require"></textarea>
+                    </div>
+                    <div class="line-big">
+                        <div class="xl12 xs6">
+                            <div class="form-group">
+                                <div class="field">
+                                    <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" onblur="checkEmail(this)"/>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group submit-message">
-                            <div class="field">
-                                <button class="submit" type="submit">确认提交</button>
+                        <div class="xl12 xs6">
+                            <div class="form-group">
+                                <div class="field">
+                                    <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" onblur="checkCountryName(this)" required="required"/>
+                                    <span class="colorred">*</span>
+                                </div>
                             </div>
                         </div>
-            </form>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <textarea class="input" name="message" id="msg" placeholder="您的留言" class="require"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group submit-message">
+                        <div class="field">
+                            <button class="submit" type="submit">确认提交</button>
+                        </div>
+                    </div>
+                </form>
 
             </div>
         </div>
@@ -263,7 +286,9 @@
             $(".guide-article .guide-article-a").mouseenter(function () {
                 $(this).addClass("active").siblings().removeClass("active")
             });
-        })
+            
+
+        });
     </script>
 </body>
 
