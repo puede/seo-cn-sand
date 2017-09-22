@@ -22,17 +22,23 @@
 .case-feature
     @media(min-width:1000px)
         padding-left: 10px
-    @media(max-width:449px)
-        padding-bottom: 0
+    @media(max-width:999px)
+        padding-top: 10px
+        padding-bottom: 10px
+   
     h4
         padding-top: 30px
         padding-bottom: 20px
         font-weight: normal
         font-size: 18px
         padding-left: 16px
+        @media(max-width:1199px)
+            font-size: 17px
+        @media(max-width:999px)
+            padding-bottom: 10px
         @media(max-width:449px)
             font-size: 14px
-            padding-bottom: 10px
+            
     .feature
         @media(max-width:759px) and (min-width:300px)
             width: 33.333333%
