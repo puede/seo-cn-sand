@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>案例中心</title>
+    <title>联系我们</title>
     <meta name="keywords" content=" ">
     <meta name="description" content=" ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,6 +103,7 @@
                 <h4>在线留言</h4>
                 <script src="/js/msg-utf8.js" charset="utf-8"></script>
                 <script>
+                    
                     //校验邮箱
                     function checkEmail(obj){
                         var yx=obj.value;
@@ -110,15 +111,16 @@
                         var t=yx.match(reg);
                         if (t==null){
                             alert("邮箱输入有误，请重填！");
-                        }return false;
+                        }
                     }
 
                     // 手机号验证
-                    function checkTel(){
+                    function checkTel(obj){
                         var tel = document.getElementById('tel').value;
-                        if(!/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(tel)){
+                        var telReg=new RegExp(/^1[0-9]{10}$/);
+                        var res=telReg.test(tel);
+                        if(!res){
                             alert('手机号码有误，请重填');
-                            return false;
                         }
                     }
                 </script>
@@ -128,7 +130,7 @@
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" 
+                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" size="2" 
                                     onblur="checkName(this)" required="required"
                                     />
                                     <span class="colorred">*</span>
