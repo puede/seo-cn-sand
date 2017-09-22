@@ -175,55 +175,57 @@
                     </div>
                     <div class="online-message">
                         <h4>在线留言</h4>
-                        <script src="/js/msg-utf8.js" charset="utf-8"></script>
-                        <form action="http://data.lmzg.com/post.php" method="post">
-                            <input type="hidden" name="url" id="url" value="http://122.152.193.160:8081/hpt/">
+                        <form action="http://data.lmzg.com/post.php" method="post"  class="form-tips">
+                            <input type="hidden" name="url" id="url" value="">
+                            <script>document.getElementById("url").value = location.href</script>
                             <div class="line-big">
-                                    <div class="xl12 xs6">
-                                        <div class="form-group">
-                                            <div class="field">
-                                                <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" required="required"  />
-                                                <span class="colorred">*</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl12 xs6">
-                                        <div class="form-group">
-                                            <div class="field">
-                                                <input name="tel" id="tel" type="text" class="input"  placeholder="联系方式" />
-                                                <span class="colorred">*</span>
-                                            </div>
+                                <div class="xl12 xs6">
+                                    <div class="form-group">
+                                        <div class="field">
+                                            <input type="text" class="input" id="uname" name="name" placeholder="您的姓名"  
+                                             required="required" data-validate="required:用户名必需,chinese:请填写正确的称呼"
+                                            />
+                                            <span class="colorred">*</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="line-big">
-                                    <div class="xl12 xs6">
-                                        <div class="form-group">
-                                            <div class="field">
-                                                <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xl12 xs6">
-                                        <div class="form-group">
-                                            <div class="field">
-                                                <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" />
-                                                <span class="colorred">*</span>
-                                            </div>
+                                <div class="xl12 xs6">
+                                    <div class="form-group">
+                                        <div class="field">
+                                            <input name="tel" id="tel" type="text" class="input" placeholder="联系方式" required="required" data-validate="required:手机号必需,mobile:请填写正确的手机号"
+                                            />
+                                            <span class="colorred">*</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="field">
-                                        <textarea class="input" name="message" id="msg" placeholder="您的留言" class="require"></textarea>
+                            </div>
+                            <div class="line-big">
+                                <div class="xl12 xs6">
+                                    <div class="form-group">
+                                        <div class="field">
+                                            <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" data-validate="email:邮箱"/>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group submit-message">
-                                    <div class="field">
-                                        <button class="submit" type="submit">确认提交</button>
+                                <div class="xl12 xs6">
+                                    <div class="form-group">
+                                        <div class="field">
+                                            <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" />
+                                        </div>
                                     </div>
                                 </div>
-                    </form>
+                            </div>
+                            <div class="form-group">
+                                <div class="field">
+                                    <textarea class="input" name="message" id="msg" placeholder="您的留言" class="require"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group submit-message">
+                                <div class="field">
+                                    <button class="submit" type="submit">确认提交</button>
+                                </div>
+                            </div>
+                        </form>
 
                     </div>
                 </div>

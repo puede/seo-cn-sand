@@ -101,37 +101,16 @@
             </div>
             <div class="xl12 xm9 message-r" id="comment">
                 <h4>在线留言</h4>
-                <script src="/js/msg-utf8.js" charset="utf-8"></script>
-                <script>
-                    
-                    //校验邮箱
-                    function checkEmail(obj){
-                        var yx=obj.value;
-                        var reg="^\\w+@\\w+(\\.\\w{2,3})*\\.\\w{2,3}$";
-                        var t=yx.match(reg);
-                        if (t==null){
-                            alert("邮箱输入有误，请重填！");
-                        }
-                    }
-
-                    // 手机号验证
-                    function checkTel(obj){
-                        var tel = document.getElementById('tel').value;
-                        var telReg=new RegExp(/^1[0-9]{10}$/);
-                        var res=telReg.test(tel);
-                        if(!res){
-                            alert('手机号码有误，请重填');
-                        }
-                    }
-                </script>
-                <form action="http://data.lmzg.com/post.php" method="post" id="submitForm">
-                    <input type="hidden" name="url" id="url" value="http://122.152.193.160:8081/hpt/">
+        
+                <form action="http://data.lmzg.com/post.php" method="post"  class="form-tips">
+                    <input type="hidden" name="url" id="url" value="">
+                    <script>document.getElementById("url").value = location.href</script>
                     <div class="line-big">
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" size="2" 
-                                    onblur="checkName(this)" required="required"
+                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名"  
+                                     required="required" data-validate="required:用户名必需,chinese:请填写正确的称呼"
                                     />
                                     <span class="colorred">*</span>
                                 </div>
@@ -140,8 +119,8 @@
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input name="tel" id="tel" type="text" class="input" placeholder="联系方式" required="required" minlength="2" 
-                                    onblur="checkTel(this)"/>
+                                    <input name="tel" id="tel" type="text" class="input" placeholder="联系方式" required="required" data-validate="required:手机号必需,mobile:请填写正确的手机号"
+                                    />
                                     <span class="colorred">*</span>
                                 </div>
                             </div>
@@ -151,15 +130,14 @@
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" onblur="checkEmail(this)"/>
+                                    <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" data-validate="email:邮箱"/>
                                 </div>
                             </div>
                         </div>
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" onblur="checkCountryName(this)" required="required"/>
-                                    <span class="colorred">*</span>
+                                    <input type="text" class="input" name="country_name" id="province" placeholder="所在地区" />
                                 </div>
                             </div>
                         </div>
@@ -179,8 +157,6 @@
             </div>
         </div>
     </section>
-
-
     <footer>
         <div class="container">
             <div class="foot-line">

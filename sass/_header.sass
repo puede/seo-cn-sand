@@ -8,15 +8,18 @@
     .tel
         color: #d8d8d8 
     .charge
-        color: #e60012
+        color: $blue
         @media (min-width: 1200px)
             float: right
         @media (min-width: 1000px)
             padding-left: 15px
     .hotline
-        color: #e60012
+        color: $blue
     @media screen and (max-width: 759px)
         display: none
+    .counsel
+        @media (min-width: 1000px) and (max-width:1199px)
+            padding-left: 76px
 
 .doc-naver
     padding-top: 10px 
@@ -38,12 +41,10 @@
         margin-top: 10px
 
 .nav
-    @media (min-width: 1000px) and (max-width:1199px)
-        margin-left: -76px
     @media (min-width: 760px) and (max-width:999px)
         margin-left: -6px
         margin-right: -6px
     @media (min-width: 1200px)
-        padding: 0;
-        margin-left: -21px;
-        margin-right: -22px;
+        padding: 0
+        margin-left: -21px
+        margin-right: -22px
