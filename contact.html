@@ -101,16 +101,17 @@
             </div>
             <div class="xl12 xm9 message-r" id="comment">
                 <h4>在线留言</h4>
-        
-                <form action="http://data.lmzg.com/post.php" method="post"  class="form-tips">
+
+                <form action="http://data.lmzg.com/post.php" method="post" class="form-tips">
                     <input type="hidden" name="url" id="url" value="">
-                    <script>document.getElementById("url").value = location.href</script>
+                    <script>
+                        document.getElementById("url").value = location.href
+                    </script>
                     <div class="line-big">
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名"  
-                                     required="required" data-validate="required:用户名必需,chinese:请填写正确的称呼"
+                                    <input type="text" class="input" id="uname" name="name" placeholder="您的姓名" required="required" data-validate="required:用户名必需,chinese:请填写正确的称呼"
                                     />
                                     <span class="colorred">*</span>
                                 </div>
@@ -130,7 +131,7 @@
                         <div class="xl12 xs6">
                             <div class="form-group">
                                 <div class="field">
-                                    <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" data-validate="email:邮箱"/>
+                                    <input type="text" class="input" name="email" id="email" placeholder="您的邮箱" data-validate="email:邮箱" />
                                 </div>
                             </div>
                         </div>
@@ -237,10 +238,25 @@
         <p>版权所有：黎明重工 备案号：<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">豫ICP备10200540号-22</a>            服务热线：<a href="tel:4006551888">400-655-1888</a></p>
     </div>
 
-    <div class="foot-l show-l">
-        <a href="tel:4006551888">
-            <span>电话咨询：<strong>400-655-1888</strong></span>
-        </a>
+    <div class="doc-backtop win-backtop icon-arrow-circle-up"></div>
+    <div class="stickey-footer">
+        <div class="main-menu ">
+            <div class="aa">
+                <a href=""><span class="icon-home"></span><br>首页</a>
+            </div>
+            <div class="aa">
+                <a href="#"><span class="icon-th "></span><br>产品</a>
+            </div>
+            <div class="aa">
+                <a href="#"><span class="icon-plus-circle"></span><br>案例</a>
+            </div>
+            <div class="aa">
+                <a href="#"><span class="icon-money"></span><br>投资指导</a>
+            </div>
+            <div class="aa">
+                <a href="#"><span class="icon-envelope"></span><br>留言</a>
+            </div>
+        </div>
     </div>
     <script src="./js/jquery.js"></script>
     <script src="./js/pintuer.js"></script>
@@ -264,7 +280,7 @@
             $(".guide-article .guide-article-a").mouseenter(function () {
                 $(this).addClass("active").siblings().removeClass("active")
             });
-            
+
 
         });
     </script>
